@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "custom_hero_nEpekJ": {
+      "type": "custom-hero",
+      "name": "Custom Animated Hero",
+      "settings": {
+        "bg_image": "shopify://shop_images/abstract_flower_1.png",
+        "logo": "shopify://shop_images/HOG-logo-white.png"
+      }
+    },
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
@@ -60,6 +68,7 @@
         "text_YLPk4p",
         "button_H9gpTf"
       ],
+      "disabled": true,
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "video",
@@ -508,6 +517,7 @@
     }
   },
   "order": [
+    "custom_hero_nEpekJ",
     "hero_jVaWmY",
     "product_list_fa6P9H",
     "slideshow_kC648E"
