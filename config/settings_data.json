@@ -81,14 +81,14 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#ffffff",
-          "foreground_heading": "#000000",
+          "background": "#fff7f0",
+          "foreground_heading": "#2a3033",
           "foreground": "#000000cf",
-          "primary": "#000000cf",
+          "primary": "#d8603d",
           "primary_hover": "#000000",
           "border": "#0000000f",
           "shadow": "#000000",
-          "primary_button_background": "#000000",
+          "primary_button_background": "#d8603d",
           "primary_button_text": "#ffffff",
           "primary_button_border": "#000000",
           "primary_button_hover_background": "#333333",
