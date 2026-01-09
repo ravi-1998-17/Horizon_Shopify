@@ -197,7 +197,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Beyond Recognition  </h2><h2>-A Legacy in Motion</h2>",
+                    "text": "<p>Beyond Recognition-A Legacy in Motion</p>",
                     "width": "100%",
                     "max_width": "narrow",
                     "alignment": "left",
