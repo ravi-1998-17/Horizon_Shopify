@@ -110,6 +110,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/frontpage-intro.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -131,7 +132,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Bestseller</p>",
+                "text": "<p>About Us</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -196,8 +197,8 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Our signature product</h2>",
-                    "width": "fit-content",
+                    "text": "<h2>Beyond Recognition  - A Legacy in Motion</h2>",
+                    "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "h3",
@@ -207,7 +208,7 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
-                    "color": "var(--color-foreground)",
+                    "color": "var(--color-foreground-heading)",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -221,7 +222,7 @@
                 "text_eWVezg": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
+                    "text": "<p>True legacy is not measured by fame, but by enduring impact.<br/><br/>House of Govils is the family-led continuation of this philosophy -- a platform where values are transformed into creations, experiences and spaces that inspire calm, positivity and refined living.<br/><br/></p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -252,7 +253,7 @@
             "button_7T9GFQ": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "Read More...",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
@@ -271,16 +272,17 @@
           ]
         }
       },
+      "custom_css": [],
       "name": "t:names.editorial",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
         "media_height": "60svh",
-        "section_width": "full-width",
-        "extend_media": true,
-        "color_scheme": "scheme-4",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "section_width": "page-width",
+        "extend_media": false,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 30,
+        "padding-block-end": 30
       }
     },
     "product_list_fa6P9H": {
