@@ -1177,9 +1177,7 @@
         "group_qPJTLy",
         "group_MMbFLt"
       ],
-      "custom_css": [
-        ".multicolumn {background-color: #fff;}"
-      ],
+      "custom_css": [],
       "name": "t:names.multicolumn",
       "settings": {
         "content_direction": "row",
@@ -1201,8 +1199,8 @@
         "border_width": 1,
         "border_opacity": 100,
         "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
+        "toggle_overlay": true,
+        "overlay_color": "#ffffffc7",
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 48,
