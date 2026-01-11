@@ -288,43 +288,38 @@ onDocumentLoaded(() => {
     mutationObserver.observe(headerGroup, { childList: true });
   }
 
-   /* ============================================================
-     HERO VISIBILITY → HEADER LOGO VISIBILITY
-     When hero (first 100vh section) is visible:
-     → Hide header logo
-     When hero ends:
-     → Show header logo
-     ============================================================ */
 
-  const heroSection = document.querySelector('#hero-section');
-  const headerLogo = document.querySelector(
-    '#header-component-desktop .header-logo'
+  /* ============================================================
+   HERO VISIBILITY → HEADER LOGO VISIBILITY
+   When hero (first 100vh section) is visible:
+   → Hide header logo
+   When hero ends:
+   → Show header logo
+   ============================================================ */
+
+const heroSection = document.querySelector('#hero-section');
+const headerLogo = document.querySelector(
+  '#header-component-desktop .header-logo'
+);
+
+if (heroSection && headerLogo) {
+  const heroObserver = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        // Hero visible → hide logo
+        headerLogo.setAttribute('data-hidden-by-hero', '');
+      } else {
+        // Hero ended → show logo
+        headerLogo.removeAttribute('data-hidden-by-hero');
+      }
+    },
+    {
+      threshold: 0.1
+    }
   );
 
-  // Safety check
-  if (heroSection && headerLogo) {
-    const heroObserver = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          // Hero is visible → hide logo
-          headerLogo.style.opacity = '0';
-          headerLogo.style.visibility = 'hidden';
-          headerLogo.style.pointerEvents = 'none';
-        } else {
-          // Hero is NOT visible → show logo
-          headerLogo.style.opacity = '1';
-          headerLogo.style.visibility = 'visible';
-          headerLogo.style.pointerEvents = 'auto';
-        }
-      },
-      {
-        threshold: 0.1 // Trigger when ~10% of hero is visible
-      }
-    );
-
-    heroObserver.observe(heroSection);
-  }
-
-
+  heroObserver.observe(heroSection);
+}
+  
 
 });
