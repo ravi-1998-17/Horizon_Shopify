@@ -11,7 +11,7 @@ declare global {
     locale: string;
     shop: string;
     loadFeatures(features: ShopifyFeature[], callback?: LoadCallback): void;
-    ModelViewerUI?: ModelViewer;
+    ModelViewerUI?: ModelViewer;A
     visualPreviewMode: boolean;
   }
 
