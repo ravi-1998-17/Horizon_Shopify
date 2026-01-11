@@ -4039,8 +4039,14 @@ text-component {
 }
 
 
+/* ============================================================
+   Hide header logo while hero section is visible
+   (Overrides Horizon !important rules safely)
+   ============================================================ */
+
 .header-logo[data-hidden-by-hero] {
   opacity: 0 !important;
   visibility: hidden !important;
   pointer-events: none !important;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
