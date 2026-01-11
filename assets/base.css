@@ -4037,3 +4037,10 @@ text-component {
     font-size: max(1rem, 100%);
   }
 }
+
+
+.header-logo[data-hidden-by-hero] {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
