@@ -287,39 +287,4 @@ onDocumentLoaded(() => {
 
     mutationObserver.observe(headerGroup, { childList: true });
   }
-
-
-  /* ============================================================
-   HERO VISIBILITY → HEADER LOGO VISIBILITY
-   When hero (first 100vh section) is visible:
-   → Hide header logo
-   When hero ends:
-   → Show header logo
-   ============================================================ */
-
-const heroSection = document.querySelector('#hero-section');
-const headerLogo = document.querySelector(
-  '#header-component-desktop .header-logo'
-);
-
-if (heroSection && headerLogo) {
-  const heroObserver = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        // Hero visible → hide logo
-        headerLogo.setAttribute('data-hidden-by-hero', '');
-      } else {
-        // Hero ended → show logo
-        headerLogo.removeAttribute('data-hidden-by-hero');
-      }
-    },
-    {
-      threshold: 0.1
-    }
-  );
-
-  heroObserver.observe(heroSection);
-}
-  
-
 });
